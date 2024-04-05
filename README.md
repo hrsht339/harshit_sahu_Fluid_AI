@@ -1,5 +1,32 @@
 # Task Management System API Documentation
 
+## Installation
+
+### Clone the repository:
+
+`git clone <repository_url>`
+
+### Navigate to the project directory:
+
+`cd <project_directory>`
+
+### Install dependencies:
+
+`npm install`
+
+### Create a .env file in the root directory and define the MongoDB connection URL:
+
+makefile `.env`
+
+`mongoUrl=<your_mongodb_connection_url>`
+
+### Starting the Server
+
+#### To start the server, run the following command:
+
+`npm run server`
+
+
 ## Base URL
 
 - Base URL: `http://localhost:4500/`
