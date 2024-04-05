@@ -2,6 +2,7 @@ const express = require("express");
 const { userRouter } = require("./routes/signup.route")
 const { connection } = require("./configs/db.js");
 const { taskRouter } = require("./routes/tasks.route.js");
+const { authentication } = require("./middleware/authentication.js");
 
 const app = express();
 
@@ -9,7 +10,7 @@ app.use(express.json())
 
 
 app.use("/", userRouter)
-
+app.use(authentication)
 app.use("/", taskRouter)
 
 
